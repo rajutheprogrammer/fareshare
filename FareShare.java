@@ -35,7 +35,7 @@ public class FareShare
     float duea=ex_per_head-firsta;
     float dueb=ex_per_head-seconda;
     
-    System.out.flush();
+    
     System.out.println("roommates have to pay: " + ex_per_head+"per head"); 
     if(duea<0)
     {
