@@ -3,7 +3,7 @@
  * Write a description of class FareShare here.
  *
  * @author (Rajesh Chandra)
- * @version (a )
+ * @version (.01 )
  */
 import java.util.Scanner;
 public class FareShare
@@ -12,42 +12,51 @@ public class FareShare
     Scanner myObj1 = new Scanner(System.in);
     Scanner myObj2 = new Scanner(System.in);
 
-    System.out.println("Enter Name,Amount of  first Roommate:");
+    System.out.println("Enter Name,Expance of  first Roommate:");
     String firstr=myObj1.nextLine(); 
-    int firsta=myObj1.nextInt();
-    int n=1;
-    System.out.println("Enter Name,Amount of  second Roommate:");
+    float firsta=myObj1.nextFloat();
+    
+    System.out.println("Enter Name,Expance of  second Roommate:");
     String secondr=myObj2.nextLine(); 
-    int seconda=myObj2.nextInt();
-     n=2;
+    float  seconda=myObj2.nextFloat();
+     
 
     
 
     // Numerical input
-    int amount =firsta+seconda;
-    int roommates=n;
+    float amount =firsta+seconda;
+    
 
     // Output input by user
     
     System.out.println("Amount: " + amount); 
-    System.out.println("roommates: " + n); 
-    int ex_per_head=expencePerHead(amount,roommates);
-    int duea=ex_per_head-firsta;
-    int dueb=ex_per_head-seconda;
     
+    float ex_per_head=expencePerHead(amount);
+    float duea=ex_per_head-firsta;
+    float dueb=ex_per_head-seconda;
     
+    System.out.flush();
     System.out.println("roommates have to pay: " + ex_per_head+"per head"); 
+    if(duea<0)
+    {
+    System.out.println(firstr+" will get: " + Math.abs(duea));
+    System.out.println(secondr+" ows: " + Math.abs(dueb));
+    }
+    else
+    {
+    System.out.println(secondr+"will get: " + Math.abs(dueb));
+    System.out.println(firstr+" ows: " + Math.abs(duea));
+    }
     
-    System.out.println(firstr+" have to pay: " + duea);
-    System.out.println(secondr+" have to pay: " + dueb);
+    
     
   }
   
 
     
-    public static int expencePerHead(int a,int r)
+    public static float expencePerHead(float a)
     {
         // put your code here
-        return a/r;
+        return a/2;
     }
 }
