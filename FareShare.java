@@ -39,12 +39,12 @@ public class FareShare
     System.out.println("roommates have to pay: " + ex_per_head+"per head"); 
     if(duea<0)
     {
-    System.out.println(firstr+" will get: " + Math.abs(duea));
+    System.out.println(firstr+" will receive: " + Math.abs(duea));
     System.out.println(secondr+" ows: " + Math.abs(dueb));
     }
     else
     {
-    System.out.println(secondr+"will get: " + Math.abs(dueb));
+    System.out.println(secondr+"will receive: " + Math.abs(dueb));
     System.out.println(firstr+" ows: " + Math.abs(duea));
     }
     
