@@ -3,7 +3,7 @@
  * Write a description of class FareShare here.
  *
  * @author (Rajesh Chandra)
- * @version (.01 )
+ * @version (.02 )
  */
 import java.util.Scanner;
 public class FareShare
