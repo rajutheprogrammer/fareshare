@@ -9,16 +9,16 @@ import java.util.Scanner;
 public class FareShare
 {
     public static void main(String[] args) {
-    Scanner myObj1 = new Scanner(System.in);
-    Scanner myObj2 = new Scanner(System.in);
+   /* Scanner myObj1 = new Scanner(System.in);
+    Scanner myObj2 = new Scanner(System.in);*/
 
-    System.out.println("Enter Name,Expance of  first Roommate:");
-    String firstr=myObj1.nextLine(); 
-    float firsta=myObj1.nextFloat();
+   /* System.out.println("Enter Name,Expance of  first Roommate:");*/
+    String firstr= args[0];      /*myObj1.nextLine(); */
+    float firsta= Float.parseFloat(args[1]);        /*myObj1.nextFloat();*/
     
-    System.out.println("Enter Name,Expance of  second Roommate:");
-    String secondr=myObj2.nextLine(); 
-    float  seconda=myObj2.nextFloat();
+    /*System.out.println("Enter Name,Expance of  second Roommate:");*/
+    String secondr= args[2];                          /*myObj2.nextLine(); */
+    float  seconda=  Float.parseFloat(args[3]);                        /*myObj2.nextFloat();*/
      
 
     
